@@ -1,3 +1,4 @@
+
 <div align="center">
 
 # ⚙️ Cysra Anome Plugin Factory (CAPF)
@@ -68,3 +69,63 @@ Make sure you have Python installed, along with PyQt5:
 
 ```bash
 pip install PyQt5
+
+```
+
+### Usage
+
+1. Load the CAPF System Prompt into your AI Assistant.
+2. Provide a brief description of the plugin you want to build (e.g., *"Create a terminal emulator plugin"*).
+3. Copy the generated PyQt5 code into your Cysra Anome project!
+
+---
+
+## 💻 Example Output
+
+Here is a minimal example of a widget generated following the CAPF standard:
+
+```python
+from PyQt5.QtWidgets import QWidget, QVBoxLayout, QLabel, QPushButton
+
+class AppWidget(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.count = 0
+        layout = QVBoxLayout()
+        
+        self.label = QLabel(f"Count: {self.count}")
+        layout.addWidget(self.label)
+        
+        self.btn = QPushButton("Increase")
+        self.btn.clicked.connect(self.increment)
+        layout.addWidget(self.btn)
+        
+        self.setLayout(layout)
+
+    def increment(self):
+        self.count += 1
+        self.label.setText(f"Count: {self.count}")
+
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingPlugin`)
+3. Commit your Changes (`git commit -m 'Add some AmazingPlugin'`)
+4. Push to the Branch (`git push origin feature/AmazingPlugin`)
+5. Open a Pull Request
+
+---
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+**Made with ❤️ by [muhabbetkusudayi](https://www.google.com/search?q=https://github.com/muhabbetkusudayi) for the Cysra Anome Community**
