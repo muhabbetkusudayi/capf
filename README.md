@@ -39,6 +39,8 @@
 **Cysra Anome Plugin Factory (CAPF)** is an AI-driven tool designed to simplify and accelerate plugin creation for **Cysra Anome**. 
 
 Developing plugins for new framework architectures can be challenging for beginners. CAPF lowers this barrier to zero by converting simple, 1-2 sentence prompts into fully functional, production-ready PyQt5 plugins.
+
+
 ---
 
 ## ✨ Key Features
